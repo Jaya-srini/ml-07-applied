@@ -725,3 +725,59 @@ dtype: int64
 2026-08-08 22:44:54 | INFO | M07 | ========================
 2026-08-08 22:44:54 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
 2026-08-08 22:44:54 | INFO | M07 | ========================
+2026-08-09 00:18:59 | INFO | M07 | === RUN START ===
+2026-08-09 00:18:59 | INFO | M07 | project=M07
+2026-08-09 00:18:59 | INFO | M07 | repo_dir=ml-07-applied
+2026-08-09 00:18:59 | INFO | M07 | python=3.14.6
+2026-08-09 00:18:59 | INFO | M07 | os=Darwin 23.6.0
+2026-08-09 00:18:59 | INFO | M07 | shell=zsh
+2026-08-09 00:18:59 | INFO | M07 | cwd=notebooks
+2026-08-09 00:18:59 | INFO | M07 | github_actions=False
+2026-08-09 00:18:59 | INFO | M07 | Confirming installation:
+2026-08-09 00:18:59 | INFO | M07 |   python:       3.14.6
+2026-08-09 00:18:59 | INFO | M07 |   pandas:       3.0.5
+2026-08-09 00:18:59 | INFO | M07 |   numpy:        2.5.1
+2026-08-09 00:18:59 | INFO | M07 |   matplotlib:   3.11.1
+2026-08-09 00:18:59 | INFO | M07 |   seaborn:      0.13.2
+2026-08-09 00:18:59 | INFO | M07 |   requests:     2.34.2
+2026-08-09 00:18:59 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-09 00:18:59 | INFO | M07 | Baseline predictions:
+2026-08-09 00:19:00 | INFO | M07 |   expected=Adelie     got=Adelie     [OK]
+2026-08-09 00:19:00 | INFO | M07 |   expected=Chinstrap  got=Chinstrap  [OK]
+2026-08-09 00:19:00 | INFO | M07 |   expected=Gentoo     got=Gentoo     [OK]
+2026-08-09 00:19:04 | INFO | M07 | bill_length_mm sweep:
+2026-08-09 00:19:04 | INFO | M07 |  bill_length_mm prediction
+      30.000000     Adelie
+      31.578947     Adelie
+      33.157895     Adelie
+      34.736842     Adelie
+      36.315789     Adelie
+      37.894737     Adelie
+      39.473684     Adelie
+      41.052632     Adelie
+      42.631579  Chinstrap
+      44.210526  Chinstrap
+      45.789474  Chinstrap
+      47.368421  Chinstrap
+      48.947368  Chinstrap
+      50.526316  Chinstrap
+      52.105263  Chinstrap
+      53.684211  Chinstrap
+      55.263158  Chinstrap
+      56.842105  Chinstrap
+      58.421053  Chinstrap
+      60.000000  Chinstrap
+2026-08-09 00:19:04 | INFO | M07 | ANALYST CHOICE: Where does the prediction shift and does that match your expectation?
+2026-08-09 00:19:25 | INFO | M07 | ANALYST CHOICE: What does the boundary shape tell you about the model?
+2026-08-09 00:19:25 | INFO | M07 | Edge case results:
+2026-08-09 00:19:25 | INFO | M07 |   missing feature        -> ERROR: 400 Client Error: Bad Request for url: https://ml-penguin-predictor.onrender.com/predict
+2026-08-09 00:19:25 | INFO | M07 |   extreme bill length    -> Adelie
+2026-08-09 00:19:26 | INFO | M07 |   very large bill        -> Chinstrap
+2026-08-09 00:19:26 | INFO | M07 |   negative value         -> Adelie
+2026-08-09 00:19:26 | INFO | M07 |   zero body mass         -> Adelie
+2026-08-09 00:19:26 | INFO | M07 | ANALYST CHOICE: Which edge cases were handled cleanly and which were not?
+2026-08-09 00:19:26 | INFO | M07 | ========================
+2026-08-09 00:19:26 | INFO | M07 | SUMMARY
+2026-08-09 00:19:26 | INFO | M07 | ========================
+2026-08-09 00:19:26 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-09 00:19:26 | INFO | M07 | ========================

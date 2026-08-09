@@ -21,19 +21,9 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
+Section 3's chart now auto-detects and labels the exact bill_length_mm value(s) where the prediction flips species, using dashed vertical lines instead of requiring a manual read of the color changes or log table. This change would turn "where's the boundary?" from a guess into a one-glance answer, computed directly from the sweep data.Ran the modified cell; confirmed the labeled lines land exactly on the rows in df_sweep where prediction changes from the row before.
 
-Include:
-
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
-
-Compared with the example project,
-explain what is different and why the change matters.
-
-Was it easy, or surprisingly challenging and why do you think so?
+Result: The transition is identified and mapped on chart for better understanding. Example shows what the model predicts; this shows where it decides — quantified, not eyeballed.
 
 ## Phase 5. Custom Project
 
