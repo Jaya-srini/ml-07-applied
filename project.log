@@ -781,3 +781,48 @@ dtype: int64
 2026-08-09 00:19:26 | INFO | M07 | ========================
 2026-08-09 00:19:26 | INFO | M07 | API endpoint: https://ml-penguin-predictor.onrender.com/predict
 2026-08-09 00:19:26 | INFO | M07 | ========================
+2026-08-09 00:50:15 | INFO | M07_custom | === RUN START ===
+2026-08-09 00:50:15 | INFO | M07_custom | project=M07_custom
+2026-08-09 00:50:15 | INFO | M07_custom | repo_dir=ml-07-applied
+2026-08-09 00:50:15 | INFO | M07_custom | python=3.14.6
+2026-08-09 00:50:15 | INFO | M07_custom | os=Darwin 23.6.0
+2026-08-09 00:50:15 | INFO | M07_custom | shell=zsh
+2026-08-09 00:50:15 | INFO | M07_custom | cwd=notebooks
+2026-08-09 00:50:15 | INFO | M07_custom | github_actions=False
+2026-08-09 00:50:15 | INFO | M07_custom | Confirming installation:
+2026-08-09 00:50:15 | INFO | M07_custom |   python:       3.14.6
+2026-08-09 00:50:15 | INFO | M07_custom |   pandas:       3.0.5
+2026-08-09 00:50:15 | INFO | M07_custom |   numpy:        2.5.1
+2026-08-09 00:50:15 | INFO | M07_custom |   matplotlib:   3.11.1
+2026-08-09 00:50:15 | INFO | M07_custom |   requests:     2.34.2
+2026-08-09 00:50:15 | INFO | M07_custom | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-09 00:50:45 | INFO | M07_custom | Baseline: expected=Adelie got=TIMEOUT (server may be sleeping - try again) [MISMATCH]
+2026-08-09 00:51:10 | INFO | M07_custom | body_mass_g sweep:
+2026-08-09 00:51:10 | INFO | M07_custom |  body_mass_g prediction
+ 2000.000000     Adelie
+ 2263.157895     Adelie
+ 2526.315789     Adelie
+ 2789.473684     Adelie
+ 3052.631579     Adelie
+ 3315.789474     Adelie
+ 3578.947368     Adelie
+ 3842.105263     Adelie
+ 4105.263158     Adelie
+ 4368.421053     Adelie
+ 4631.578947     Adelie
+ 4894.736842     Adelie
+ 5157.894737     Adelie
+ 5421.052632     Adelie
+ 5684.210526     Adelie
+ 5947.368421     Adelie
+ 6210.526316     Adelie
+ 6473.684211     Adelie
+ 6736.842105     Adelie
+ 7000.000000     Adelie
+2026-08-09 00:51:10 | INFO | M07_custom | ANALYST CHOICE: body_mass_g never changed the prediction on its own over this range - what does that say about how much this feature matters relative to bill_length_mm (see the example notebook)?
+2026-08-09 00:51:10 | INFO | M07_custom | ========================
+2026-08-09 00:51:10 | INFO | M07_custom | SUMMARY
+2026-08-09 00:51:10 | INFO | M07_custom | ========================
+2026-08-09 00:51:10 | INFO | M07_custom | API endpoint: https://ml-penguin-predictor.onrender.com/predict
+2026-08-09 00:51:10 | INFO | M07_custom | Investigated feature: body_mass_g (single-feature sweep only)
+2026-08-09 00:51:10 | INFO | M07_custom | ========================

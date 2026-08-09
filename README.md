@@ -18,15 +18,12 @@ We learn to:
 - identify decision boundaries and edge cases
 - interpret model behavior from the outside
 
-## Example Notebook + Your Notebook
-
-Keep the example notebook as it is.
-Either copy it or use it to build a new notebook that ends in _yourname.
-See [docs/your-files.md] for more.
 
 Links:
 
 - [ml_07_case.ipynb](notebooks/ml_07_case.ipynb)
+- [ml_07_jaya.ipynb](notebooks/ml_07_jaya.ipynb)
+- [ml_07_jaya_custom.ipynb](notebooks/ml_07_jaya_custom.ipynb)
 
 ## Working Files
 
@@ -56,26 +53,6 @@ to complete:
 4. Phase 4. **Modify**
 5. Phase 5. **Apply**
 
-## Challenges
-
-Challenges are expected.
-Sometimes instructions may not quite match your operating system.
-When issues occur, share screenshots, error messages, and details about what you tried.
-Working through issues is part of implementing professional projects.
-
-## Success
-
-After completing Phase 1. **Start & Run**, you'll have your own GitHub project,
-with the example notebook executed and committed,
-and running the example module will print out:
-
-```shell
-========================
-Executed successfully!
-========================
-```
-
-A new file `project.log` will appear in the root project folder.
 
 ## Command Reference
 
@@ -133,65 +110,22 @@ git push -u origin main
 
 </details>
 
-## Notes
-
-- Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
-- Use `CTRL+f` to find (and replace) text within a file.
-- You do not need to add to or modify `tests/`. They are provided for example only.
-- Many files are silent helpers. Explore as you like, but nothing is required.
-- You do NOT need to understand everything; understanding builds naturally over time.
-
-## Troubleshooting >>>
-
-If you see something like this in your terminal: `>>>` or `...`
-You accidentally started Python interactive mode.
-It happens.
-Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
-
-## Example Output (Can Remove this Section after You Verify)
-
-```shell
-| INFO | ML | Summarize workflow........
-| INFO | ML | ========================
-| INFO | ML | SUMMARY
-| INFO | ML | ========================
-| INFO | ML | Dataset: hours_scores_case
-| INFO | ML | Original rows: 10
-| INFO | ML | Clean rows: 10
-| INFO | ML | Features: ['hours_studied', 'practice_quizzes', 'attendance_pct', 'sleep_hours', 'prior_score']
-| INFO | ML | Target: score
-| INFO | ML | ----- in a script, call plt.show() once at the end to display all charts -----
-| INFO | ML | ----- in a script, CLOSE the chart windows with the close button to CONTINUE -----
-| INFO | ML | Workflow complete
-| INFO | ML | IMPORTANT: This script creates chart windows.
-| INFO | ML | Close chart windows and terminate this process with CTRL+c as needed.
-| INFO | ML | ========================
-| INFO | ML | Executed successfully!
-| INFO | ML | ========================
-```
 
 ## Findings and Visuals
 
-Take screenshots of your charts and provide them here with a discussion.
-In Markdown, display a figure by using:
-an exclamation mark immediately followed by square brackets containing a useful caption
-immediately followed by parentheses containing the relative path to your figure.
-Note: When you start typing the path with a dot (.) for "here, in this directory",
-the IDE may help complete the path.
+**Commands:** same as the [Command Reference](#command-reference) above -
+`uv sync`, then open `notebooks/ml_07_jaya.ipynb` and
+`notebooks/ml_07_jaya_custom.ipynb` in VS Code and Run All.
 
-In your custom project, follow this example, but
+**Process:** `ml_07_jaya.ipynb` reproduces the example investigation
+(baseline check, `bill_length_mm` sweep, prediction grid, edge cases) with
+one modification - the sweep chart now auto-labels the exact value where the prediction flips species. `ml_07_jaya_custom.ipynb` narrows that down to a single question: does `body_mass_g` alone move the prediction? See [docs/index.md](docs/index.md) for the full write-up.
 
-- your figures and narrative should reflect your work,
-- this `README.md` should include your commands, process, and visuals, and
-- `docs/index.md` should include your narrative.
+**Visuals:**
 
-Remove unnecessary instructional comments in your custom files.
+![bill_length_mm sweep with labeled Adelie -> Chinstrap transition at ~42.6mm](./docs/images/flip.png)
 
-Update figures to present interesting results from your custom project:
-
-![Provide a Useful Caption](./docs/images/Figure_1.png)
-
-![Provide a Useful Caption](./docs/images/Figure_2.png)
+![body_mass_g sweep - prediction stays Adelie across the full 2000-7000g range](./docs/images/output.png)
 
 ## Project Documentation
 
