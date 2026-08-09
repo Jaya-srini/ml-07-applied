@@ -36,6 +36,7 @@ Result: The transition is identified and mapped on chart for better understandin
 Same model and endpoint as the example: the ML Penguin Predictor
 (`https://ml-penguin-predictor.onrender.com/predict`), a supervised classifier that predicts penguin `species` (Adelie, Chinstrap, Gentoo) from
 `bill_length_mm`, `bill_depth_mm`, `flipper_length_mm`, and `body_mass_g`.
+
 Kept the same endpoint - the goal was to ask a smaller question of the same model, not to test a different one.
 
 ### Investigation Approach
